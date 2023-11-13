@@ -1,0 +1,164 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #a2d2ff, #bde0fe); /* Gradient background */
+    color: #333; /* Default text color */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Hover effect for headers */
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #ff5733; /* Orange-red on hover */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out; /* Hover effect for navigation links */
+}
+
+nav ul li:hover {
+    color: #ff5733; /* Orange-red on hover */
+}
+
+header {
+    display: flex;
+    background:  #219ebc; /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+    transition: transform 0.3s ease-in-out; /* Hover effect for logo */
+}
+
+header img:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.content {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+#id1, #id2, #id3, #id4 {
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#id1 h4, #id2 h3, #id3 h3, #id4 h3 {
+    font-size: 1.8em;
+    color: #990033;
+}
+
+#id1:hover, #id2:hover, #id3:hover, #id4:hover {
+    transform: scale(1.05); /* Cool hover effect */
+}
+
+footer {
+    background: #cdb4db; /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #444; /* Provide a separation line at the top of the footer */
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease-in-out; /* Hover effect for logo in the footer */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #cccccc;
+}
+
+/* SVG styling */
+footer svg {
+    width: 40px;
+    height: 40px;
+    fill: #ff5733; /* Orange-red color for the SVG */
+    transition: transform 0.3s ease-in-out; /* Hover effect for SVG */
+}
+
+footer svg:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    header img {
+        height: 60px;
+    }
+
+    .content, #id1, #id2, #id3, #id4 {
+        padding: 15px;
+    }
+}
